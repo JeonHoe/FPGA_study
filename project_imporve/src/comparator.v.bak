@@ -1,0 +1,20 @@
+module comparator(
+    reg_data,
+    new_data,
+    great,
+    equal,
+    less
+);
+
+input [7:0] reg_data;
+input [7:0] new_data;
+
+output great;
+output equal;
+output less;
+
+assign great = (new_data > reg_data) ? 1'b1 : 1'b0;
+assign equal = (new_data == reg_data) ? 1'b1 : 1'b0;
+assign less = (new_data < reg_data) ? 1'b1 : 1'b0;
+
+endmodule

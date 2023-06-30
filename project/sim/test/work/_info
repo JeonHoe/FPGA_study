@@ -1,0 +1,290 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\de0_memory\sim
+vascii
+Z1 !s100 <i[>=^kfCO<ofP8VoVUjJ1
+Z2 I<eT7h[cInI@C7_=_E[b8b2
+Z3 Vag;2DLh28Eoo9N791XPB_0
+Z4 dC:\altera\13.1\project\sim\test
+Z5 w1686024341
+Z6 8C:/altera/13.1/project/src/ascii.v
+Z7 FC:/altera/13.1/project/src/ascii.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/ascii.v|
+Z10 o-work work -O0
+Z11 !s108 1686129134.757000
+Z12 !s107 C:/altera/13.1/project/src/ascii.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce
+Z13 !s100 `=YcQIFQ84Kz=I:kcWbi<1
+Z14 IMERHk2YK:d90T4XUD56V32
+Z15 V@MF?m7fmVJ@gkb8?>O<g:2
+R4
+Z16 w1685604624
+Z17 8C:/altera/13.1/project/src/debounce.v
+Z18 FC:/altera/13.1/project/src/debounce.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/debounce.v|
+R10
+Z20 !s108 1686129134.820000
+Z21 !s107 C:/altera/13.1/project/src/debounce.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detection
+Z22 !s100 od8<7jbXU8j1cL2@l8<N62
+Z23 IUYmD90N7W[cc?P@?L^YRX1
+Z24 VznFZXcU`@]]zm^7^22FN73
+R4
+Z25 w1680277528
+Z26 8C:/altera/13.1/project/src/edge_detection.v
+Z27 FC:/altera/13.1/project/src/edge_detection.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/edge_detection.v|
+R10
+Z29 !s108 1686129134.868000
+Z30 !s107 C:/altera/13.1/project/src/edge_detection.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfnd_out
+Z31 !s100 oQ12`aLCN?GbhKM`_fXf<1
+Z32 I2N[7U;I?dM?=e@b3cfa^Z3
+Z33 V[bXnMlY5gzH14K2OGJJK01
+R4
+Z34 w1685971833
+Z35 8C:/altera/13.1/project/src/fnd_out.v
+Z36 FC:/altera/13.1/project/src/fnd_out.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/fnd_out.v|
+R10
+Z38 !s108 1686129134.915000
+Z39 !s107 C:/altera/13.1/project/src/fnd_out.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vgen_en
+Z40 !s100 z@I4??Eja?cUdDUQZFc6=1
+Z41 IUUBPJlYnn5F?jWS^FMf2k0
+Z42 V3Ca3jZ_J[L@klnNE`;4VP0
+R4
+Z43 w1686019552
+Z44 8C:/altera/13.1/project/src/uart/gen_en.v
+Z45 FC:/altera/13.1/project/src/uart/gen_en.v
+L0 1
+R8
+r1
+31
+Z46 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/uart/gen_en.v|
+R10
+Z47 !s108 1686129134.411000
+Z48 !s107 C:/altera/13.1/project/src/uart/gen_en.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrx
+Z49 !s100 A2=eQ=O^a7;Wg[<949O_?1
+Z50 IA[NeM^jcgce170@zU2eze0
+Z51 V78@4Og894V7J1FFoQ7]2I3
+R4
+Z52 w1685596670
+Z53 8C:/altera/13.1/project/src/uart/rx.v
+Z54 FC:/altera/13.1/project/src/uart/rx.v
+L0 1
+R8
+r1
+31
+Z55 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/uart/rx.v|
+R10
+Z56 !s108 1686129134.458000
+Z57 !s107 C:/altera/13.1/project/src/uart/rx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vspi_master
+Z58 !s100 lbIDCbfHagL?M?J6<BRL;2
+Z59 ID=I<QjGNEJR0o0nMh[]o]1
+Z60 VlUH`4Ec=Cl_0D9]zT4oaO1
+R4
+Z61 w1685605600
+Z62 8C:/altera/13.1/project/src/light_sencor/spi_master.v
+Z63 FC:/altera/13.1/project/src/light_sencor/spi_master.v
+L0 1
+R8
+r1
+31
+Z64 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/light_sencor/spi_master.v|
+R10
+Z65 !s108 1686129134.662000
+Z66 !s107 C:/altera/13.1/project/src/light_sencor/spi_master.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vspi_master_tb
+Z67 !s100 OaV[<biaCW>6Ni68ckcJE0
+Z68 IKT^eAFZ?>_8YC;dR`kV]g2
+Z69 VGVIa@54JI5PLOVOW3THe=0
+R4
+Z70 w1685605169
+Z71 8C:/altera/13.1/project/sim/spi_master_tb.v
+Z72 FC:/altera/13.1/project/sim/spi_master_tb.v
+L0 4
+R8
+r1
+31
+Z73 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/sim/spi_master_tb.v|
+R10
+Z74 !s108 1686129134.615000
+Z75 !s107 C:/altera/13.1/project/sim/spi_master_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtop
+Z76 IK89ZI6<1?Qjo@kKzSX5WX3
+Z77 V2PA^^`DW3oNHGON45[1NQ3
+R4
+Z78 w1686129127
+Z79 8C:\altera\13.1\project\src\top.v
+Z80 FC:\altera\13.1\project\src\top.v
+L0 1
+R8
+r1
+31
+R10
+Z81 !s100 T6iZh:`[O?Z35NKCFSQ5d3
+Z82 !s108 1686129134.300000
+Z83 !s107 C:\altera\13.1\project\src\top.v|
+Z84 !s90 -reportprogress|300|-work|work|C:\altera\13.1\project\src\top.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtop_tb
+Z85 !s100 FXhYG1eYYMc[M46@0B4k23
+Z86 IED98NHghk7kPSjmnAXA5S0
+Z87 VN7^ihbmI9enFg9D=Qco243
+R4
+Z88 w1686141577
+Z89 8C:\altera\13.1\project\sim\top_tb.v
+Z90 FC:\altera\13.1\project\sim\top_tb.v
+L0 4
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|-work|work|C:\altera\13.1\project\sim\top_tb.v|
+R10
+Z92 !s108 1686141642.327000
+Z93 !s107 C:\altera\13.1\project\sim\top_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtop_v2
+Z94 IP=<VJBDnS03@z5Ua]9Zfn1
+Z95 V?00j@C?Pdd@Qg<P:E^mnc0
+R4
+Z96 w1686206960
+Z97 8C:/altera/13.1/project/src/top_v2.v
+Z98 FC:/altera/13.1/project/src/top_v2.v
+L0 1
+R8
+r1
+31
+Z99 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/top_v2.v|
+R10
+!i10b 1
+Z100 !s100 Qn];P>XjMkJhR@ZEdlm;`3
+!s85 0
+Z101 !s108 1686206979.342000
+Z102 !s107 C:/altera/13.1/project/src/top_v2.v|
+!s101 -O0
+vtx
+Z103 !s100 1JOK85cnG>9gVWTbDK=2@1
+Z104 IWBh^FX:FPQGjFGo3IG2:>0
+Z105 V9G]VH_[CJF<V5^:z7Vf:K2
+R4
+Z106 w1686022045
+Z107 8C:/altera/13.1/project/src/uart/tx.v
+Z108 FC:/altera/13.1/project/src/uart/tx.v
+L0 1
+R8
+r1
+31
+Z109 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/uart/tx.v|
+R10
+Z110 !s108 1686129134.504000
+Z111 !s107 C:/altera/13.1/project/src/uart/tx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart
+Z112 !s100 ^BbBCX8e7VR?Z=NOfOCzE0
+Z113 I6e9HV0z:ATW<aHdK>RAKd1
+Z114 VzzH`7aPOnzRjJ8l2`Boe[0
+R4
+Z115 w1686021771
+Z116 8C:/altera/13.1/project/src/uart/uart.v
+Z117 FC:/altera/13.1/project/src/uart/uart.v
+L0 1
+R8
+r1
+31
+Z118 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/uart/uart.v|
+R10
+Z119 !s108 1686129134.552000
+Z120 !s107 C:/altera/13.1/project/src/uart/uart.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart_str
+!i10b 1
+!s100 8?iWNg26HXIUN@ZW9T;3Z2
+I1?01X2HOfAP7?mSNaB]e<3
+Z121 VahEEhhdkUL3k_WVdM?AKZ0
+R4
+w1686239939
+Z122 8C:/altera/13.1/project/src/uart/uart_str.v
+Z123 FC:/altera/13.1/project/src/uart/uart_str.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1686240003.212000
+!s107 C:/altera/13.1/project/src/uart/uart_str.v|
+Z124 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/src/uart/uart_str.v|
+!s101 -O0
+R10
+vuart_tb
+Z125 !s100 jKZ[UJEi9>z5>D:UdoVak2
+Z126 IBVDg:[NIOEI`_C;]:7m_H2
+Z127 VZzYO6HjR<]<2_bm?EhR?51
+R4
+Z128 w1686022911
+Z129 8C:/altera/13.1/project/sim/uart_tb.v
+Z130 FC:/altera/13.1/project/sim/uart_tb.v
+L0 4
+R8
+r1
+31
+Z131 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project/sim/uart_tb.v|
+R10
+Z132 !s108 1686129134.349000
+Z133 !s107 C:/altera/13.1/project/sim/uart_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0

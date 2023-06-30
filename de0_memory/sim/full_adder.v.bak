@@ -1,0 +1,43 @@
+`timescale 1ns/100ps
+module full_adder (
+    in1,
+    in2,
+    cin,
+    sum,
+    cout
+);
+
+// c a b C S
+// 0 0 0 0 0
+// 0 0 1 0 1
+// 0 1 0 0 1
+// 0 1 1 1 0
+// 1 0 0 0 1
+// 1 0 1 1 0
+// 1 1 0 1 0
+// 1 1 1 1 1
+
+// S = a ^ b ^ c
+// C = (a & b) + c & (a ^ b)
+
+input in1;
+input in2;
+input cin;
+
+output sum;
+output cout;
+
+wire tmp_c;
+wire tmp_s;
+
+half_adder u_half_adder1 (
+    .a(in1),
+    .b(in2),
+    .c(tmp_c),
+    .s(tmp_s)
+);
+
+assign sum = tmp_s ^ cin;
+assign cout = tmp_c + c & (tmp_s);
+
+endmodule

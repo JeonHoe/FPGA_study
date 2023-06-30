@@ -1,0 +1,161 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 11:17:38  May 02, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		memory_hw_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY memory_hw
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:17:38  MAY 02, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_G21 -to r_clk
+set_location_assignment PIN_J6 -to din[0]
+set_location_assignment PIN_E3 -to din[7]
+set_location_assignment PIN_H7 -to din[6]
+set_location_assignment PIN_J7 -to din[5]
+set_location_assignment PIN_G5 -to din[4]
+set_location_assignment PIN_G4 -to din[3]
+set_location_assignment PIN_H6 -to din[2]
+set_location_assignment PIN_H5 -to din[1]
+set_location_assignment PIN_H2 -to din_vld
+set_location_assignment PIN_F1 -to n_rst
+set_location_assignment PIN_A13 -to fnd_out1[0]
+set_location_assignment PIN_B13 -to fnd_out1[1]
+set_location_assignment PIN_C13 -to fnd_out1[2]
+set_location_assignment PIN_A14 -to fnd_out1[3]
+set_location_assignment PIN_B14 -to fnd_out1[4]
+set_location_assignment PIN_E14 -to fnd_out1[5]
+set_location_assignment PIN_A15 -to fnd_out1[6]
+set_location_assignment PIN_E11 -to fnd_out2[0]
+set_location_assignment PIN_F11 -to fnd_out2[1]
+set_location_assignment PIN_H12 -to fnd_out2[2]
+set_location_assignment PIN_H13 -to fnd_out2[3]
+set_location_assignment PIN_G12 -to fnd_out2[4]
+set_location_assignment PIN_F12 -to fnd_out2[5]
+set_location_assignment PIN_F13 -to fnd_out2[6]
+set_location_assignment PIN_B18 -to fnd_out3[0]
+set_location_assignment PIN_F15 -to fnd_out3[1]
+set_location_assignment PIN_A19 -to fnd_out3[2]
+set_location_assignment PIN_B19 -to fnd_out3[3]
+set_location_assignment PIN_C19 -to fnd_out3[4]
+set_location_assignment PIN_D19 -to fnd_out3[5]
+set_location_assignment PIN_G15 -to fnd_out3[6]
+set_location_assignment PIN_D15 -to fnd_out4[0]
+set_location_assignment PIN_A16 -to fnd_out4[1]
+set_location_assignment PIN_B16 -to fnd_out4[2]
+set_location_assignment PIN_E15 -to fnd_out4[3]
+set_location_assignment PIN_A17 -to fnd_out4[4]
+set_location_assignment PIN_B17 -to fnd_out4[5]
+set_location_assignment PIN_F14 -to fnd_out4[6]
+set_location_assignment PIN_B1 -to full
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to din_vld
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dout_vld
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to fnd_out4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to full
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to n_rst
+set_location_assignment PIN_B12 -to w_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to w_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to r_clk
+set_location_assignment PIN_B2 -to dout_vld
+set_location_assignment PIN_J1 -to status_vld[0]
+set_location_assignment PIN_J2 -to status_vld[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to status_vld[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to status_vld[0]
+set_location_assignment PIN_G3 -to read
+set_global_assignment -name VERILOG_FILE ../../de0_doorlock_2modes/src/delay.v
+set_global_assignment -name VERILOG_FILE mem_ip/ram_dual_2x8/ram_dual_2x8.v
+set_global_assignment -name VERILOG_FILE ../src/mem_ip/write_ctrl.v
+set_global_assignment -name VERILOG_FILE ../src/mem_ip/read_ctrl.v
+set_global_assignment -name VERILOG_FILE ../src/memory_hw.v
+set_global_assignment -name QIP_FILE mem_ip/ram_dual_2x8/ram_dual_2x8.qip
+set_global_assignment -name VERILOG_FILE output_files/fnd_out.v
+set_global_assignment -name SDC_FILE memory_hw.sdc
+set_location_assignment PIN_C2 -to dout_err
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to read
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dout_err
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS4
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

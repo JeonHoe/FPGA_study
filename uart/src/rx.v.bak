@@ -1,0 +1,109 @@
+module rx( // 입력 직렬 rxd를 병렬 출력 rx_data로 변환하는 모듈
+    clk,
+    n_rst,
+    rxd,
+    rx_data
+);
+
+input clk;
+input n_rst;
+input rxd;
+
+output [7:0] rx_data;
+reg [7:0] rx_data;
+
+reg [1:0] c_state;
+reg [1:0] n_state;
+
+reg [15:0] c_cnt1;
+reg [15:0] n_cnt1; // 카운터1 : sclk 생성 카운터
+
+reg [3:0] c_cnt2;
+reg [3:0] n_cnt2; // 카운터2 : sclk를 세는 카운터
+
+localparam SR0 = 2'h0;
+localparam SR1 = 2'h1;
+localparam SR2 = 2'h2;
+localparam SR3 = 2'h3;
+
+localparam FLG1 = 16'h1458;
+localparam FLG2 = 4'ha;
+
+always @(posedge clk or negedge n_rst) begin // 카운터1, 카운터2, 상태 초기화
+    if(n_rst) begin
+        c_state <= SR0;
+        c_cnt1 <= 16'h0001;
+        c_cnt2 <= 4'h1;
+    end
+    else begin
+        c_state <= n_state;
+        c_cnt1 <= n_cnt1;
+        c_cnt2 <= n_cnt2;
+    end
+end
+
+always @(rxd or n_cnt2) begin // 상태 동작 정의
+    case(c_state)
+    SR0 : n_state = (rxd == 1'b1) ? c_state : SR1;
+    SR1 : n_state = (n_cnt2 == 4'h2) ? SR2 : c_state;
+    SR2 : n_state = (n_cnt2 == FLG2) ? SR3 : c_state;
+    SR3 : n_state = (n_cnt2 == 4'h1) ? SR0 : c_state;
+    default : n_state = SR0;
+    endcase
+end
+
+always @(c_state or c_cnt) begin // 카운터 1 동작 정의
+    case(c_state)
+    SR0 : n_cnt1 = 16'h0001;
+    default : n_cnt1 = (c_cnt1 == FLG1) ? 16'h0001 : c_cnt1 + 16'h0001;
+    endcase
+end
+
+reg sclk; // sclk 선언
+
+always @(posedge clk or negedge n_rst) begin // sclk 동작 정의
+    if(!n_rst) begin
+        sclk <= 1'b1;
+    end
+    else begin
+        sclk <= (c_state == SR0) ? 1'b1 :
+                (c_cnt1 < 16'h0A2D) ? 1'b1 : 1'b0;
+    end
+end
+
+reg sclk_d; 
+wire sclk_r; // sclk rising edge 부분을 감지하기 위한 변수들
+
+always @(posedge clk or negedge n_rst) begin
+    if(!n_rst) begin
+        sclk_d <= 1'b1;
+    end
+    else begin
+        sclk_d <= sclk;
+    end
+end
+
+assign sclk_r = ((sclk == 1'b1)&&(sclk_d == 1'b0)) ? 1'b1 : 1'b0; // rising edge 감지를 위한 동작 정의
+
+always @(sclk_r or c_state) begin // 카운터2의 동작 정의
+    case(c_state)
+    SR0 : n_cnt2 = 4'h1;
+    default : n_cnt2 = (sclk_r == 1'b0) ? c_cnt2 :
+                       (c_cnt2 == FLG2) ? 4'h1 : c_cnt2 + 4'h1;
+    endcase
+end
+
+always @ (posedge clk or negedge n_rst) begin // 병렬 출력 rx_data 동작 정의
+    if(!n_rst) begin
+        rx_data <= 8'h00;
+    end
+    else if (c_state == SR2) begin
+        rx_data <= (sclk_r == 1'b1) ? {rx_data[6:0], rxd} : rx_data;
+    end
+    else begin
+        rx_data <= rx_data;
+    end
+end
+
+
+endmodule

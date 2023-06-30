@@ -1,0 +1,90 @@
+module de0_doorlock_2modes(
+	clk,
+	n_rst,
+	star,
+	sharp,
+	number,
+	open,
+	alarm,
+	mode_active,
+	mode_set
+);
+
+input clk;
+input n_rst;
+input star;
+input sharp;
+input [9:0] number;
+
+output open;
+output alarm;
+output mode_active;
+output mode_set;
+
+wire debounce_star;
+wire debounce_sharp;
+
+wire edge_star;
+wire edge_sharp;
+
+debounce u_debounce1(
+    .clk(clk),
+	.n_rst(n_rst), 
+	.din(star), 
+	.dout(debounce_star) 
+);
+
+debounce u_debounce2(
+    .clk(clk),
+	.n_rst(n_rst), 
+	.din(sharp), 
+	.dout(debounce_sharp) 
+);
+
+edge_detection u_edge_detection1(
+    .clk(clk),
+    .n_rst(n_rst),
+    .data(debounce_star),
+	.tick(),
+    .tick_rising(edge_star)
+	.tick_falling()
+);
+
+edge_detection u_edge_detection2(
+    .clk(clk),
+    .n_rst(n_rst),
+    .data(debounce_sharp),
+	.tick(),
+    .tick_rising(edge_sharp),
+	.tick_falling()
+);
+
+wire slide_data = (number != 10'h000) ? 1'b1 : 1'b0;
+wire slide_tick_rising;
+
+edge_detection u_edge_detection3(
+    .clk(clk),
+    .n_rst(n_rst),
+    .data(slide_data),
+	.tick(),
+    .tick_rising(slide_tick_rising),
+	.tick_falling()
+);
+
+wire [9:0] edge_number;
+
+assign edge_number = (slide_tick_rising == 1'b1) ? number : 10'h000;
+
+doorlock_2modes u_doorlock_2modes(
+    .clk(clk),
+	.n_rst(n_rst),
+	.star(edge_star),
+	.sharp(edge_sharp),
+	.number(edge_number),
+	.open(open),
+	.alarm(alarm),
+	.mode_active(mode_active),
+	.mode_set(mode_set)
+);
+
+endmodule

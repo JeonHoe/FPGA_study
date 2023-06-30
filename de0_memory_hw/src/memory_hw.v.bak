@@ -1,0 +1,129 @@
+
+module memory_hw(
+    w_clk,
+    r_clk,
+    din,
+    din_vld,
+    n_rst,
+    full,
+    dout,
+    dout_vld,
+    fnd_out1,
+    fnd_out2,
+    fnd_out3,
+    fnd_out4
+);
+
+input w_clk;
+input r_clk;
+input [7:0] din;
+input din_vld;
+input n_rst;
+
+output full;
+output [7:0] dout;
+output dout_vld;
+output [6:0] fnd_out1;
+output [6:0] fnd_out2;
+output [6:0] fnd_out3;
+output [6:0] fnd_out4;
+
+wire [7:0] w_data;
+wire [1:0] status_vld;
+wire w_addr;
+wire w_en;
+wire [7:0] q;
+wire r_addr;
+wire [1:0] r_done;
+
+`ifdef FPGA
+ram_dual_2x8 u_ram_dual_2x8(
+    .data(w_data),
+	.rdaddress({3'b000, r_addr}),
+	.rdclock(clk),
+	.wraddress({3'b000, w_addr}),
+	.wrclock(clk),
+	.wren(w_en),
+	.q(q)
+);
+write_ctrl u_write_ctrl1 (
+    .clk(clk),
+    .n_rst(n_rst),
+    .din(!din),
+    .din_vld(din_vld),
+    .r_done(r_done),
+    .full(full),
+    .status_vld(status_vld),
+    .w_addr(w_addr),
+    .w_data(w_data),
+    .w_en(w_en)
+);
+
+`else
+ram_dual_port_2x32 #( .DATA_WIDTH(8), .ADDR_WIDTH(1) ) u_ram_dual_port_2x32(
+	.wrclk(clk),
+   .rdclk(clk),
+	.data(w_data),
+	.rdaddress(r_addr),
+	.wraddress(w_addr),
+	.wren(w_en),
+	.q(q)
+);
+
+write_ctrl u_write_ctrl2 (
+    .clk(clk),
+    .n_rst(n_rst),
+    .din(din),
+    .din_vld(din_vld),
+    .r_done(r_done),
+    .full(full),
+    .status_vld(status_vld),
+    .w_addr(w_addr),
+    .w_data(w_data),
+    .w_en(w_en)
+);
+
+`endif
+
+read_ctrl u_read_ctrl (
+    .clk(clk),
+    .n_rst(n_rst),
+    .r_data(q),
+    .status_vld(status_vld),
+    .dout(dout),
+    .dout_vld(dout_vld),
+    .r_addr(r_addr),
+    .r_done(r_done)
+);
+
+wire [6:0] pre_fnd_out1;
+wire [6:0] pre_fnd_out2;
+wire [6:0] pre_fnd_out3;
+wire [6:0] pre_fnd_out4;
+
+fnd_out u_fnd_out1 (
+    .number(dout[7:4]),
+    .fnd_on(pre_fnd_out1)
+);
+
+fnd_out u_fnd_out2 (
+    .number(dout[3:0]),
+    .fnd_on(pre_fnd_out2)
+);
+
+fnd_out u_fnd_out3 (
+    .number(dout[7:4]),
+    .fnd_on(pre_fnd_out3)
+);
+
+fnd_out u_fnd_out4 (
+    .number(dout[3:0]),
+    .fnd_on(pre_fnd_out4)
+);
+
+assign fnd_out1 = (r_addr == 1'b0) ? pre_fnd_out1 : 7'h00; // HEX1
+assign fnd_out2 = (r_addr == 1'b0) ? pre_fnd_out2 : 7'h00; // HEX0
+assign fnd_out3 = (r_addr == 1'b1) ? pre_fnd_out3 : 7'h00; // HEX3
+assign fnd_out4 = (r_addr == 1'b1) ? pre_fnd_out4 : 7'h00; // HEX2
+
+endmodule

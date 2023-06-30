@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="de0_memory">
+		<CBX_INST_ENTRY INSTANCE_NAME="|de0_memory|ram_dual_32x8:ram_dual_32x8_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_87n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de0_memory|rom32x8:rom_32x8_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v391.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

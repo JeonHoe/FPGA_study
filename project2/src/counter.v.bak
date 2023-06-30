@@ -1,0 +1,26 @@
+module counter(
+    clk,
+    n_rst,
+    adc_data,
+    counter
+);
+
+input clk;
+input n_rst;
+input [7:0] adc_data;
+
+output reg [3:0] counter;
+
+always @(posedge clk or negedge n_rst) begin
+    if(!n_rst) begin
+        counter <= 4'h0;
+    end
+    else if((adc_data > 8'h50)||(adc_data < 8'h10)) begin
+        counter <= counter + 4'h1;
+    end
+    else begin
+        counter <= coutner;
+    end
+end
+
+endmodule

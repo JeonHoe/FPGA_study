@@ -1,0 +1,271 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1
+vde0_doorlock_2modes
+Z1 !s100 XUJI:XG4GBNE3YLMUIMeR1
+Z2 IWcddboFPcbLD]lnKL=_FY2
+Z3 VU<=JJg6V4_Q:z38kQKe:T3
+Z4 dC:\altera\13.1\de0_doorlock_2modes\sim
+Z5 w1680577436
+Z6 8C:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v
+Z7 FC:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v|
+Z10 o-work work -O0
+Z11 !s108 1681219776.709000
+Z12 !s107 C:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vde0_memory
+Z13 !s100 H?O928SCjFY4ePOLJX_Ef2
+Z14 Ibhl>M^L2aJ@74bG[5I2TI2
+Z15 VNFLkHX2fPBYhL481UnRJ=1
+R4
+Z16 w1681218714
+Z17 8C:/altera/13.1/de0_memory/src/de0_memory.v
+Z18 FC:/altera/13.1/de0_memory/src/de0_memory.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_memory/src/de0_memory.v|
+R10
+Z20 !s108 1681219777.026000
+Z21 !s107 C:/altera/13.1/de0_memory/src/de0_memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce
+Z22 !s100 Q0=XELlk`eb5ZDg]E2z:g0
+Z23 IFI<gG=ENmX4k4bfzAX23<1
+Z24 V:Y<<K?K<Q?YSFdhhEBHU>2
+R4
+Z25 w1680574733
+Z26 8C:/altera/13.1/de0_doorlock_2modes/src/debounce.v
+Z27 FC:/altera/13.1/de0_doorlock_2modes/src/debounce.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/src/debounce.v|
+R10
+Z29 !s108 1681219776.758000
+Z30 !s107 C:/altera/13.1/de0_doorlock_2modes/src/debounce.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce_v0
+Z31 !s100 n>a<Tca>5R8jk0NW]1oY`3
+Z32 ISiGzX]FIa=J^b?f=o>fHA0
+Z33 V7f1Wgz5dR0z3f:HL68Ze32
+R4
+Z34 w1680498512
+Z35 8C:\altera\13.1\de0_doorlock_2modes\src\debounce.v
+Z36 FC:\altera\13.1\de0_doorlock_2modes\src\debounce.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|C:\altera\13.1\de0_doorlock_2modes\src\debounce.v|
+R10
+Z38 !s108 1680498571.433000
+Z39 !s107 C:\altera\13.1\de0_doorlock_2modes\src\debounce.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce_v1_0
+Z40 IfY_0KCcHfGOXFzV_cULU`0
+Z41 VO67elBEGPzklfize8zoTo1
+R4
+Z42 w1680329870
+R26
+R27
+L0 1
+R8
+r1
+31
+R10
+Z43 !s100 D=hb8m_5OO@=^Gj]9h<OG0
+Z44 !s108 1680330055.479000
+R30
+R28
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce_v3
+Z45 I]EQFXkZADF<hhT83YhXm50
+Z46 VYChaWakilfmcI4BzH]O1S0
+R4
+Z47 w1680498729
+R35
+R36
+L0 1
+R8
+r1
+31
+R37
+R10
+Z48 !s100 CaBUeo6`hoIZ2a1hJ7fcn0
+Z49 !s108 1680498736.635000
+R39
+!i10b 1
+!s85 0
+!s101 -O0
+vdelay
+Z50 !s100 SQCfe2]jV]Hnz_neP[eW03
+Z51 IU>DzedT^Qode<oLVkP4>O2
+Z52 V;HZzl_UZLY]_gnHcGKJGe2
+R4
+Z53 w1680574622
+Z54 8C:/altera/13.1/de0_doorlock_2modes/src/delay.v
+Z55 FC:/altera/13.1/de0_doorlock_2modes/src/delay.v
+L0 1
+R8
+r1
+31
+Z56 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/src/delay.v|
+R10
+Z57 !s108 1681219776.963000
+Z58 !s107 C:/altera/13.1/de0_doorlock_2modes/src/delay.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdoorlock_2modes
+Z59 !s100 F?YT4l_IjmmV6N`L59DWo2
+Z60 IDl9zooCTRb_^0P@^:WT:52
+Z61 VQ[DeKIE8QUHmcOWVKfQBY2
+R4
+Z62 w1681174268
+Z63 8C:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v
+Z64 FC:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v
+L0 1
+R8
+r1
+31
+Z65 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v|
+R10
+Z66 !s108 1681219776.805000
+Z67 !s107 C:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detection
+Z68 !s100 :IA4_gD_:Yb4`H^Pz;lz20
+Z69 IRcKRZfJh9>7on09cc<KK63
+Z70 VznFZXcU`@]]zm^7^22FN73
+R4
+Z71 w1680277526
+Z72 8C:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v
+Z73 FC:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v
+L0 1
+R8
+r1
+31
+Z74 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v|
+R10
+Z75 !s108 1681219776.869000
+Z76 !s107 C:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vram_dual
+Z77 !s100 YLlW<G:S[mQWRIjJ131g@2
+Z78 IGNL`YP;Pn^_nZ9mfZj:a22
+Z79 VdLhmiZJW6TU9g3WMDY>O81
+R4
+Z80 w1681218388
+Z81 8C:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v
+Z82 FC:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v
+L0 1
+R8
+r1
+31
+Z83 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v|
+R10
+!i10b 1
+!s85 0
+Z84 !s108 1681219777.121000
+Z85 !s107 C:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v|
+!s101 -O0
+vrom
+!i10b 1
+Z86 !s100 CXkhzYe<aR99alH19jcXO2
+Z87 I;Z;=2<_`gWK5=nkzB3feU3
+Z88 VJz_G=^Ml9ob:2=JVEO43]2
+R4
+w1681219744
+Z89 8C:/altera/13.1/de0_memory/src/mem_ip/rom.v
+Z90 FC:/altera/13.1/de0_memory/src/mem_ip/rom.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1681219777.168000
+!s107 C:/altera/13.1/de0_memory/src/mem_ip/rom.v|
+Z91 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_memory/src/mem_ip/rom.v|
+!s101 -O0
+R10
+vtb_de0_doorlock_fixed
+Z92 !s100 _]9l16WEZml54cY1]n@6J2
+Z93 IgH9X1hc=m;mckPZ[3Oe1E0
+Z94 VJSBFR_if@_UbJkP6I]<KX2
+R4
+Z95 w1680509766
+Z96 8C:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v
+Z97 FC:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v
+L0 7
+R8
+r1
+31
+Z98 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v|
+R10
+Z99 !s108 1681219776.646000
+Z100 !s107 C:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_de0_memory
+Z101 !s100 AE4?_<W7<NI]5lKN134232
+Z102 IaSO95fY]Y0O]9_j:T?TMg2
+Z103 VWRVnT6?<>=IXP5H2`AO5K3
+R4
+Z104 w1681181209
+Z105 8C:/altera/13.1/de0_memory/sim/tb_de0_memory.v
+Z106 FC:/altera/13.1/de0_memory/sim/tb_de0_memory.v
+L0 3
+R8
+r1
+31
+Z107 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_memory/sim/tb_de0_memory.v|
+R10
+Z108 !s108 1681219777.074000
+Z109 !s107 C:/altera/13.1/de0_memory/sim/tb_de0_memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtest
+Z110 !s100 9lnQo^0^fCAFR:Lfd^n6C1
+Z111 IgD7bMFS`eZk?_NzeCDdRF2
+Z112 Vk<3<[f=78GX=_HO53D;7>3
+R4
+Z113 w1680574447
+Z114 8C:/altera/13.1/de0_doorlock_2modes/sim/test.v
+Z115 FC:/altera/13.1/de0_doorlock_2modes/sim/test.v
+L0 4
+R8
+r1
+31
+Z116 !s90 -reportprogress|300|-work|work|C:/altera/13.1/de0_doorlock_2modes/sim/test.v|
+R10
+Z117 !s108 1681219776.916000
+Z118 !s107 C:/altera/13.1/de0_doorlock_2modes/sim/test.v|
+!i10b 1
+!s85 0
+!s101 -O0

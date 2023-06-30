@@ -1,0 +1,85 @@
+module write_ctrl(
+    clk,
+    n_rst,
+    din,
+    din_vld,
+    r_done,
+    full,
+    status_vld,
+    w_addr,
+    w_data,
+    w_en
+);
+
+localparam S0 = 3'h0; // 초기화 상태
+localparam S1 = 3'h1; // '저장 상태' 확인
+localparam S2 = 3'h2; // 빈 공간에 데이터 쓰기
+localparam S3 = 3'h3; // '저장 상태' 변경
+localparam S4 = 3'h4; // 'w_addr' 변경
+localparam S5 = 3'h5; // 'r_done' 입력 -> '저장 상태' 변경
+
+reg [2:0] c_state;
+reg [2:0] n_state;
+
+input clk; input n_rst;
+input [7:0] din;
+input din_vld;
+input [1:0] r_done;
+
+output full;
+output [1:0] status_vld;
+output w_addr;
+output [7:0] w_data;
+output w_en;
+
+reg w_addr;
+reg [1:0] status_vld;
+
+always @(posedge clk or negedge n_rst) begin
+    if(!n_rst) begin
+        c_state <= S0;
+    end
+    else begin
+        c_state <= n_state;
+    end
+end
+
+always @(din or din_vld or r_done)
+    case(c_state)
+    S0 : n_state = S1;
+    S1 : n_state = (r_done != 2'b00) ? S5 :
+                   (din_vld == 1'b0) ? c_state :
+                   (status_vld[w_addr] == 1'b0) ? S2 : c_state;
+    S2 : n_state = S3;
+    S3 : n_state = S4;
+    S4 : n_state = S1;
+    S5 : n_state = S1;
+    default: n_state = S0;
+endcase
+
+always @(posedge clk or negedge n_rst)
+    if(!n_rst)
+        w_addr <= 1'b0;
+    else
+        w_addr <= (n_state == S4) ? ~w_addr : w_addr;
+
+assign w_en = (c_state == S2) ? 1'b1 : 1'b0;
+assign w_data = din;
+assign full = (status_vld == 2'b11) ? 1'b1 : 1'b0;
+
+wire [1:0] mask;
+assign mask = (w_addr == 1'b1) ? 2'b10 : 2'b01;
+
+// XX w_adrr 0 -> X1
+// XX or 01 -> X1
+// XX w_addr 1 -> 1X
+// XX or 10 -> 1X
+
+always @(posedge clk or negedge n_rst)
+    if(!n_rst)
+        status_vld <= 2'b00;
+    else
+        status_vld <= (n_state == S3) ? status_vld | mask :
+                      (n_state == S5) ? (status_vld ^ r_done) & status_vld : status_vld;
+
+endmodule

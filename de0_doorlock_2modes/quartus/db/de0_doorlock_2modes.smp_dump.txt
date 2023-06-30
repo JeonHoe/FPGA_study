@@ -1,0 +1,33 @@
+
+State Machine - |de0_doorlock_2modes|doorlock_2modes:u_doorlock_2modes|s_state
+Name s_state.S_SET2 s_state.S_SET1 s_state.S_RDY s_state.S_IDLE s_state.S_SET3 
+s_state.S_IDLE 0 0 0 0 0 
+s_state.S_RDY 0 0 1 1 0 
+s_state.S_SET1 0 1 0 1 0 
+s_state.S_SET2 1 0 0 1 0 
+s_state.S_SET3 0 0 0 1 1 
+
+State Machine - |de0_doorlock_2modes|doorlock_2modes:u_doorlock_2modes|a_state
+Name a_state.A_ALARM a_state.A_OPEN a_state.A_CHECK a_state.A_ERR a_state.A_PW3 a_state.A_PW2 a_state.A_PW1 a_state.A_IDLE 
+a_state.A_IDLE 0 0 0 0 0 0 0 0 
+a_state.A_PW1 0 0 0 0 0 0 1 1 
+a_state.A_PW2 0 0 0 0 0 1 0 1 
+a_state.A_PW3 0 0 0 0 1 0 0 1 
+a_state.A_ERR 0 0 0 1 0 0 0 1 
+a_state.A_CHECK 0 0 1 0 0 0 0 1 
+a_state.A_OPEN 0 1 0 0 0 0 0 1 
+a_state.A_ALARM 1 0 0 0 0 0 0 1 
+
+State Machine - |de0_doorlock_2modes|debounce:u_debounce2|state
+Name state.S_WAIT1 state.S_ONE state.S_WAIT0 state.S_ZERO 
+state.S_ZERO 0 0 0 0 
+state.S_WAIT0 0 0 1 1 
+state.S_ONE 0 1 0 1 
+state.S_WAIT1 1 0 0 1 
+
+State Machine - |de0_doorlock_2modes|debounce:u_debounce1|state
+Name state.S_WAIT1 state.S_ONE state.S_WAIT0 state.S_ZERO 
+state.S_ZERO 0 0 0 0 
+state.S_WAIT0 0 0 1 1 
+state.S_ONE 0 1 0 1 
+state.S_WAIT1 1 0 0 1 

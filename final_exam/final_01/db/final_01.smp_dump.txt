@@ -1,0 +1,7 @@
+
+State Machine - |final_01|c_state
+Name c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 
+c_state.S1 0 0 1 1 
+c_state.S2 0 1 0 1 
+c_state.S3 1 0 0 1 

@@ -1,0 +1,78 @@
+C:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/src/de0_doorlock_2modes.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module de0_doorlock_2modes
+
+Top level modules:
+	de0_doorlock_2modes
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/src/doorlock_2modes_toStudents.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module doorlock_2modes
+
+Top level modules:
+	doorlock_2modes
+
+} {} {}} C:/altera/13.1/de0_memory/sim/tb_de0_memory.v {1 {vlog -work work C:/altera/13.1/de0_memory/sim/tb_de0_memory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_de0_memory
+
+Top level modules:
+	tb_de0_memory
+
+} {} {}} C:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v {1 {vlog -work work C:/altera/13.1/de0_memory/src/mem_ip/ram_duall.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ram_dual
+
+Top level modules:
+	ram_dual
+
+} {} {}} C:/altera/13.1/de0_memory/src/mem_ip/rom.v {1 {vlog -work work C:/altera/13.1/de0_memory/src/mem_ip/rom.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/src/delay.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/src/delay.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module delay
+
+Top level modules:
+	delay
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/src/edge_detection.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module edge_detection
+
+Top level modules:
+	edge_detection
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/sim/tb_de0_doorlock_2modes.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_de0_doorlock_fixed
+
+Top level modules:
+	tb_de0_doorlock_fixed
+
+} {} {}} C:/altera/13.1/de0_memory/src/de0_memory.v {1 {vlog -work work C:/altera/13.1/de0_memory/src/de0_memory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module de0_memory
+
+Top level modules:
+	de0_memory
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/src/debounce.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/src/debounce.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module debounce
+
+Top level modules:
+	debounce
+
+} {} {}} C:/altera/13.1/de0_doorlock_2modes/sim/test.v {1 {vlog -work work C:/altera/13.1/de0_doorlock_2modes/sim/test.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}}

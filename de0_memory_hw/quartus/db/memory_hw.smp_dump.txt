@@ -1,0 +1,18 @@
+
+State Machine - |memory_hw|read_ctrl:u_read_ctrl1|c_state
+Name c_state.S5 c_state.S4 c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 0 0 
+c_state.S1 0 0 0 0 1 1 
+c_state.S2 0 0 0 1 0 1 
+c_state.S3 0 0 1 0 0 1 
+c_state.S4 0 1 0 0 0 1 
+c_state.S5 1 0 0 0 0 1 
+
+State Machine - |memory_hw|write_ctrl:u_write_ctrl1|c_state
+Name c_state.S5 c_state.S4 c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 0 0 
+c_state.S1 0 0 0 0 1 1 
+c_state.S2 0 0 0 1 0 1 
+c_state.S3 0 0 1 0 0 1 
+c_state.S4 0 1 0 0 0 1 
+c_state.S5 1 0 0 0 0 1 

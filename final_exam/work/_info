@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1
+vfinal_01
+Z1 IQjP@0jJdh@nV[;lkR^JnY0
+Z2 V4ZOa4Y1iPcJ@jPd`a<ok93
+Z3 dC:\altera\13.1\final_exam
+Z4 w1687229114
+Z5 8C:/altera/13.1/final_exam/final_01/final_01.v
+Z6 FC:/altera/13.1/final_exam/final_01/final_01.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 kZX9;gVK>nB4FEZ`[R0;82
+Z10 !s108 1687229195.434000
+Z11 !s107 C:/altera/13.1/final_exam/final_01/final_01.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/altera/13.1/final_exam/final_01/final_01.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfinal_02
+Z13 !s100 6_OAem@55Zn@[Hf10RSaP2
+Z14 INHDSVkWXNIY6Nj:^cRnId3
+Z15 VLQ[W?>Z@<>FSmc4onWW030
+R3
+Z16 w1687226177
+Z17 8C:/altera/13.1/final_exam/final_02.v
+Z18 FC:/altera/13.1/final_exam/final_02.v
+L0 1
+R7
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/altera/13.1/final_exam/final_02.v|
+R8
+Z20 !s108 1687226556.938000
+Z21 !s107 C:/altera/13.1/final_exam/final_02.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfinal_03
+Z22 IkaRVR87N=]hHgz:0kJV^N3
+Z23 VTolN3[O9:ibLmoTeZCEjL1
+R3
+Z24 w1687228763
+Z25 8C:/altera/13.1/final_exam/final_03.v
+Z26 FC:/altera/13.1/final_exam/final_03.v
+L0 1
+R7
+r1
+31
+Z27 !s90 -reportprogress|300|-work|work|C:/altera/13.1/final_exam/final_03.v|
+R8
+Z28 !s100 W;eX`AaJZh4f=Uh[cXMEB3
+Z29 !s108 1687228769.313000
+Z30 !s107 C:/altera/13.1/final_exam/final_03.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfinal_04
+Z31 Ijh]B7iXXbmXmk[fN?6l8I0
+Z32 Vnf4dZ=j497j1nR17FHQ2G1
+R3
+Z33 w1687228797
+Z34 8C:/altera/13.1/final_exam/final_04.v
+Z35 FC:/altera/13.1/final_exam/final_04.v
+L0 1
+R7
+r1
+31
+Z36 !s90 -reportprogress|300|-work|work|C:/altera/13.1/final_exam/final_04.v|
+R8
+Z37 !s100 c3@gdFj=?61g`WYo?`7T:3
+Z38 !s108 1687229150.665000
+Z39 !s107 C:/altera/13.1/final_exam/final_04.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_final
+!i10b 1
+!s100 j33[>ib^=81@WFG`]PD;;2
+IgfDldIQKMnB`]`]EB?CQc2
+Z40 V77<Wm9o>Pm;i6[z`nZe142
+R3
+w1687229561
+Z41 8C:/altera/13.1/final_exam/tb_final.v
+Z42 FC:/altera/13.1/final_exam/tb_final.v
+L0 6
+R7
+r1
+!s85 0
+31
+!s108 1687229603.154000
+!s107 C:/altera/13.1/final_exam/tb_final.v|
+Z43 !s90 -reportprogress|300|-work|work|C:/altera/13.1/final_exam/tb_final.v|
+!s101 -O0
+R8

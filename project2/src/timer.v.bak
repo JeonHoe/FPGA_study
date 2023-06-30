@@ -1,0 +1,35 @@
+module timer(
+    clk,
+    n_rst,
+    sig,
+    flg
+);
+
+input clk;
+input n_rst;
+input sig;
+
+output flg;
+
+parameter T_1S = 28'h2FA_F080;
+
+reg [27:0] c_cnt;
+reg [27:0] n_cnt;
+
+always @(posedge clk or negedge n_rst) begin
+    if(!n_rst) begin
+        c_cnt <= 28'h000_0001;
+    end
+    else begin
+        c_cnt <= n_cnt;
+    end
+end
+
+always @(sig or c_cnt) begin
+    n_cnt = (sig == 1'b0) ? 28'h000_0001 :
+            (c_cnt = T_1S) ? 28'h000_0001 : c_cnt + 28'h000_0001;
+end
+
+assign flg = (c_cnt == 28'h000_0001) ? 1'b1 : 1'b0;
+
+endmodule

@@ -1,0 +1,85 @@
+`timescale 1ns/1ps
+
+`define T_CLK 10
+`define B_DLY 1
+`define PUSH_ON 1'b1
+`define PUSH_OFF 1'b0
+module test;
+  
+  reg clk;
+  reg n_rst;
+  reg star;
+  reg sharp;
+  reg [9:0] number;
+  
+  initial begin
+	clk = 1'b1;
+	n_rst = 1'b0;
+	#(`T_CLK * 2)
+	@(negedge clk) n_rst = 1'b1;
+  end
+
+  always #(`T_CLK/2) clk = ~clk;
+  
+  initial begin
+	star = `PUSH_OFF;
+	sharp = `PUSH_OFF;
+	number = 10'h000;
+	
+	wait(n_rst == 1'b1);
+	
+	push_sharp;
+
+	#(`T_CLK) number = 10'b01_0000_0000;
+	#(`T_CLK*2) number = 10'h000;
+
+	#(`T_CLK) number = 10'b00_0000_1000;
+	#(`T_CLK*2) number = 10'h000;
+
+	push_sharp;
+	
+	@(negedge clk)
+	// ....
+	#(`T_CLK * 5)
+	
+	#(`T_CLK) number = 10'b01_0000_0000;
+	#(`T_CLK*2) number = 10'h000;
+
+	push_star;
+
+	@(negedge clk)
+
+	// password ok ... 8, 3
+	
+	#(`T_CLK) number = 10'b01_0000_0000;
+	#(`T_CLK*2) number = 10'h000;
+
+	#(`T_CLK) number = 10'b00_0000_1000;
+	#(`T_CLK*2) number = 10'h000;
+
+	push_starr;
+
+	@(negedge clk)
+  #(`T_CLK) $stop;
+  end
+	
+	task automatic push_sharp;
+    begin
+	    #(`T_CLK) sharp = `PUSH_ON;
+	    #(`T_CLK*0.5) sharp = `PUSH_OFF;
+	    #(`T_CLK*0.5) sharp = `PUSH_ON;
+	    #(`T_CLK) sharp = `PUSH_OFF;
+	end
+endtask
+
+task automatic push_star;
+    begin
+	    #(`T_CLK) star = `PUSH_ON;
+	    #(`T_CLK*0.5) star = `PUSH_OFF;
+	    #(`T_CLK*0.5) star = `PUSH_ON;
+	    #(`T_CLK) star = `PUSH_OFF;
+	end
+endtask
+
+  
+endmodule

@@ -1,0 +1,79 @@
+module debounce(
+	clk,
+	n_rst, 
+	din, 
+	dout 
+);
+
+//parameter T_ONE_SEC = 26'h2FA_F080 = d50_000_000;
+//parameter T_20MS = 20'hF_4240 = d1_000_000;
+parameter D_SIZE = 10;
+parameter T_20MS = 10'h08;
+parameter D_INIT = 1'b0;
+
+input 	clk;
+input	n_rst;
+input	din;
+
+output 	dout;
+
+localparam S_ACTIVE = 1'b0;
+localparam S_HOLD = 1'b1;
+
+reg  d1, d2;
+wire change;
+
+always @(posedge clk or negedge n_rst)
+	if(!n_rst) begin
+		d1 <= D_INIT;
+		d2 <= D_INIT;
+	end
+	else begin
+		d1 <= din;
+		d2 <= d1;
+	end
+
+assign change = (d1 != d2)? 1'b1 : 1'b0;
+
+reg       state, next_state;	
+
+always @(posedge clk or negedge n_rst)
+	if(!n_rst) begin
+		state <= S_ACTIVE;
+	end
+	else begin
+		state <= next_state;
+	end
+
+wire timeout;	
+always @(state or change or timeout) 	
+	case (state)
+		S_ACTIVE : next_state = (change == 1'b1)? S_HOLD : state;
+		S_HOLD   : next_state = (timeout == 1'b1)? S_ACTIVE : state;
+		default  : next_state = S_ACTIVE;
+	endcase
+
+reg [D_SIZE-1:0] cnt;
+
+always @(posedge clk or negedge n_rst)
+	if(!n_rst) begin
+		cnt <= {D_SIZE{1'b0}};
+	end
+	else begin
+		cnt <= ((state == S_ACTIVE)&&(change == 1'b1))? T_20MS : 
+			   (state == S_HOLD)? cnt - {{(D_SIZE-1){1'b0}},1'b1} : cnt;
+	end
+assign timeout = ((state == S_HOLD)&&(cnt == {(D_SIZE){1'b0}}))? 1'b1 : 1'b0;	
+
+reg hold_d;
+always @(posedge clk or negedge n_rst)
+	if(!n_rst) begin
+		hold_d <= D_INIT;
+	end
+	else begin
+		hold_d <= (state == S_ACTIVE)? d1 : hold_d;
+	end
+
+assign dout = hold_d;	
+
+endmodule

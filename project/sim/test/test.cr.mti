@@ -1,0 +1,99 @@
+C:/altera/13.1/project/sim/top_tb.v {1 {vlog -work work {C:\altera\13.1\project\sim\top_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}} C:/altera/13.1/project/src/top_v2.v {1 {vlog -work work C:/altera/13.1/project/src/top_v2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top_v2
+
+Top level modules:
+	top_v2
+
+} {} {}} C:/altera/13.1/project/sim/uart_tb.v {1 {vlog -work work C:/altera/13.1/project/sim/uart_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module uart_tb
+
+Top level modules:
+	uart_tb
+
+} {} {}} C:/altera/13.1/project/sim/spi_master_tb.v {1 {vlog -work work C:/altera/13.1/project/sim/spi_master_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module spi_master_tb
+
+Top level modules:
+	spi_master_tb
+
+} {} {}} C:/altera/13.1/project/src/uart/uart_str.v {1 {vlog -work work C:/altera/13.1/project/src/uart/uart_str.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module uart_str
+
+Top level modules:
+	uart_str
+
+} {} {}} C:/altera/13.1/project/src/uart/uart.v {1 {vlog -work work C:/altera/13.1/project/src/uart/uart.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}} C:/altera/13.1/project/src/top.v {1 {vlog -work work {C:\altera\13.1\project\src\top.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/altera/13.1/project/src/edge_detection.v {1 {vlog -work work C:/altera/13.1/project/src/edge_detection.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module edge_detection
+
+Top level modules:
+	edge_detection
+
+} {} {}} C:/altera/13.1/project/src/uart/rx.v {1 {vlog -work work C:/altera/13.1/project/src/uart/rx.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rx
+
+Top level modules:
+	rx
+
+} {} {}} C:/altera/13.1/project/src/debounce.v {1 {vlog -work work C:/altera/13.1/project/src/debounce.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module debounce
+
+Top level modules:
+	debounce
+
+} {} {}} C:/altera/13.1/project/src/fnd_out.v {1 {vlog -work work C:/altera/13.1/project/src/fnd_out.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fnd_out
+
+Top level modules:
+	fnd_out
+
+} {} {}} C:/altera/13.1/project/src/light_sencor/spi_master.v {1 {vlog -work work C:/altera/13.1/project/src/light_sencor/spi_master.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module spi_master
+
+Top level modules:
+	spi_master
+
+} {} {}} C:/altera/13.1/project/src/uart/gen_en.v {1 {vlog -work work C:/altera/13.1/project/src/uart/gen_en.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module gen_en
+
+Top level modules:
+	gen_en
+
+} {} {}} C:/altera/13.1/project/src/uart/tx.v {1 {vlog -work work C:/altera/13.1/project/src/uart/tx.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tx
+
+Top level modules:
+	tx
+
+} {} {}}

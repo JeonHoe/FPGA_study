@@ -1,0 +1,83 @@
+module top(
+    clk,
+    n_rst,
+    start,
+    sdata,
+    sclk,
+    cs_n,
+    led,
+    fnd_out1
+);
+
+input clk;
+input n_rst;
+input start;
+input sdata;
+
+output led;
+output cs_n;
+output sclk;
+output [6:0] fnd_out1;
+
+wire start_rs;
+wire sig;
+wire flg;
+wire led_in;
+wire [7:0] adc_data;
+wire [3:0] counter;
+
+edge_detection u_edge_detection(
+    .clk(clk),
+    .n_rst(n_rst),
+    .data(!start),
+    .tick(),
+    .tick_rising(start_rs),
+    .tick_falling()
+);
+
+sig u_sig(
+    .clk(clk),
+    .n_rst(n_rst),
+    .start(start_rs),
+    .sig(sig)
+);
+
+timer #(.FREQUENCY(28'h2FA_F080)) u_timer(
+    .clk(clk),
+    .n_rst(n_rst),
+    .sig(sig),
+    .flg(flg)
+);
+
+SPI_master u_SPI_master(
+    .clk(clk),
+    .n_rst(n_rst),
+    .start(sig),
+    .sclk(sclk),
+    .cs_n(cs_n),
+    .sdata(sdata),
+    .led(led_in),
+    .adc_data(adc_data)
+);
+
+counter u_counter(
+    .clk(clk),
+    .n_rst(n_rst),
+    .sig(flg),
+    .adc_data(adc_data),
+    .counter(counter)
+);
+
+delay u_delay(
+    .clk(clk),
+    .n_rst(n_rst),
+    .din(led_in),
+    .dout(led)
+);
+
+fnd_out u_fnd_out1(
+   .number(counter),
+   .fnd_out(fnd_out1)
+);
+
+endmodule

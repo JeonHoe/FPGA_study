@@ -1,0 +1,36 @@
+
+State Machine - |top|uart:u_uart1|rx:u_rx|c_state
+Name c_state.SR3 c_state.SR2 c_state.SR1 c_state.SR0 
+c_state.SR0 0 0 0 0 
+c_state.SR1 0 0 1 1 
+c_state.SR2 0 1 0 1 
+c_state.SR3 1 0 0 1 
+
+State Machine - |top|uart:u_uart1|tx:u_tx|c_state
+Name c_state.ST3 c_state.ST2 c_state.ST1 c_state.ST0 c_state.ST4 
+c_state.ST0 0 0 0 0 0 
+c_state.ST1 0 0 1 1 0 
+c_state.ST2 0 1 0 1 0 
+c_state.ST3 1 0 0 1 0 
+c_state.ST4 0 0 0 1 1 
+
+State Machine - |top|uart_str:u_uart_str|c_state
+Name c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 
+c_state.S1 0 0 1 1 
+c_state.S2 0 1 0 1 
+c_state.S3 1 0 0 1 
+
+State Machine - |top|spi_master:u_spi_master|c_state
+Name c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 
+c_state.S1 0 0 1 1 
+c_state.S2 0 1 0 1 
+c_state.S3 1 0 0 1 
+
+State Machine - |top|debounce:u_debounce|state
+Name state.S_WAIT1 state.S_ONE state.S_WAIT0 state.S_ZERO 
+state.S_ZERO 0 0 0 0 
+state.S_WAIT0 0 0 1 1 
+state.S_ONE 0 1 0 1 
+state.S_WAIT1 1 0 0 1 

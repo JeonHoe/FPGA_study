@@ -1,0 +1,404 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\de0_memory\sim
+vascii
+Z1 !s100 XD1<G359hBWS:G@8nAJXE3
+Z2 I;YATSZ4Lab^6RCJ9BLIRg3
+Z3 Vag;2DLh28Eoo9N791XPB_0
+Z4 dC:\altera\13.1\project_imporve\sim\test
+Z5 w1686240241
+Z6 8C:/altera/13.1/project_imporve/src/ascii.v
+Z7 FC:/altera/13.1/project_imporve/src/ascii.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/ascii.v|
+Z10 o-work work -O0
+Z11 !s108 1686565480.194000
+Z12 !s107 C:/altera/13.1/project_imporve/src/ascii.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vbuffer
+Z13 !s100 <8WiKJTBO7PlF0g_2B7?43
+Z14 IQ@FY:L1ZJOUC7fn=3IhMe3
+Z15 VF_03W36P4;Jg:m]Z_>;>k1
+R4
+Z16 w1686242460
+Z17 8C:/altera/13.1/project_imporve/src/buffer.v
+Z18 FC:/altera/13.1/project_imporve/src/buffer.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/buffer.v|
+R10
+Z20 !s108 1686565480.242000
+Z21 !s107 C:/altera/13.1/project_imporve/src/buffer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vbutton
+Z22 !s100 Rf1:Hkf3RdSPcHVW;O?ka2
+Z23 IbZPPPVMnXmDE1cHjia5Yc0
+Z24 V0WKoMh=PafWDG<5g1MG982
+R4
+Z25 w1686203184
+Z26 8C:/altera/13.1/project_imporve/src/button.v
+Z27 FC:/altera/13.1/project_imporve/src/button.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/button.v|
+R10
+Z29 !s108 1686565480.305000
+Z30 !s107 C:/altera/13.1/project_imporve/src/button.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcomparator
+Z31 !s100 kQeNT6EPDTQgWdeQb9N4C0
+Z32 IlO^GVN:QPVkFKa641EfZP0
+Z33 VjLXG4oZSVNkz<ImNzP4k@2
+R4
+Z34 w1686317386
+Z35 8C:/altera/13.1/project_imporve/src/comparator.v
+Z36 FC:/altera/13.1/project_imporve/src/comparator.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/comparator.v|
+R10
+Z38 !s108 1686565480.353000
+Z39 !s107 C:/altera/13.1/project_imporve/src/comparator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter
+Z40 !s100 2Ck?aY:3nSZ9I>20ZZ3:M2
+Z41 IA>HkkQf89ojfKCaWZklDU2
+Z42 V3zaj:4G1<hjbJG[CFYaMk2
+R4
+Z43 w1686244314
+Z44 8C:/altera/13.1/project_imporve/src/counter.v
+Z45 FC:/altera/13.1/project_imporve/src/counter.v
+L0 1
+R8
+r1
+31
+Z46 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/counter.v|
+R10
+Z47 !s108 1686565480.401000
+Z48 !s107 C:/altera/13.1/project_imporve/src/counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vd_ff
+Z49 !s100 XX<ca`DRYAYal`z=TH]EX2
+Z50 IgL@S7^[PlgH4mLdO09B7b3
+Z51 VNfSBEUOFWY<z3H]eiNoQ@3
+R4
+Z52 w1686243653
+Z53 8C:/altera/13.1/project_imporve/src/memory/d_ff.v
+Z54 FC:/altera/13.1/project_imporve/src/memory/d_ff.v
+L0 1
+R8
+r1
+31
+Z55 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/memory/d_ff.v|
+R10
+Z56 !s108 1686565480.830000
+Z57 !s107 C:/altera/13.1/project_imporve/src/memory/d_ff.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdebounce
+Z58 !s100 3e<TEcf9`TkTcl^R8DRkY1
+Z59 Izd4C[1;TCS;QdjNGKF^Pd0
+Z60 V@MF?m7fmVJ@gkb8?>O<g:2
+R4
+Z61 w1685604624
+Z62 8C:/altera/13.1/project_imporve/src/debounce.v
+Z63 FC:/altera/13.1/project_imporve/src/debounce.v
+L0 1
+R8
+r1
+31
+Z64 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/debounce.v|
+R10
+Z65 !s108 1686565480.449000
+Z66 !s107 C:/altera/13.1/project_imporve/src/debounce.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vedge_detection
+Z67 !s100 BQb`ofiaElofW^GgeRk3a1
+Z68 I`j03_ZIePaSS@FmSC96PW0
+Z69 VznFZXcU`@]]zm^7^22FN73
+R4
+Z70 w1680277528
+Z71 8C:/altera/13.1/project_imporve/src/edge_detection.v
+Z72 FC:/altera/13.1/project_imporve/src/edge_detection.v
+L0 1
+R8
+r1
+31
+Z73 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/edge_detection.v|
+R10
+Z74 !s108 1686565480.517000
+Z75 !s107 C:/altera/13.1/project_imporve/src/edge_detection.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfnd_out
+Z76 !s100 Um8U_FemQ=;l>k:4U8eS<2
+Z77 InVmddBVQhDGmEPIeKDEza0
+Z78 V[bXnMlY5gzH14K2OGJJK01
+R4
+Z79 w1685971833
+Z80 8C:/altera/13.1/project_imporve/src/fnd_out.v
+Z81 FC:/altera/13.1/project_imporve/src/fnd_out.v
+L0 1
+R8
+r1
+31
+Z82 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/fnd_out.v|
+R10
+Z83 !s108 1686565480.560000
+Z84 !s107 C:/altera/13.1/project_imporve/src/fnd_out.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vgen_en
+Z85 !s100 1j7Hm8iB[[;;<gKADKkC<1
+Z86 I2_dYU;Wj2l4DY8?@W7C?13
+Z87 V3Ca3jZ_J[L@klnNE`;4VP0
+R4
+Z88 w1686019552
+Z89 8C:/altera/13.1/project_imporve/src/uart/gen_en.v
+Z90 FC:/altera/13.1/project_imporve/src/uart/gen_en.v
+L0 1
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/uart/gen_en.v|
+R10
+Z92 !s108 1686565480.878000
+Z93 !s107 C:/altera/13.1/project_imporve/src/uart/gen_en.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux
+Z94 !s100 Tedl>aD:IO?XiQBGXKXC81
+Z95 IYzSk7WZgl_;G:F>SQo=H83
+Z96 VAMP4Y_6D=W_BN;cofzdUD3
+R4
+Z97 w1686243467
+Z98 8C:/altera/13.1/project_imporve/src/mux.v
+Z99 FC:/altera/13.1/project_imporve/src/mux.v
+L0 1
+R8
+r1
+31
+Z100 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/mux.v|
+R10
+Z101 !s108 1686565480.623000
+Z102 !s107 C:/altera/13.1/project_imporve/src/mux.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrx
+Z103 !s100 D1f7g_O00AbmUD>o8n2>33
+Z104 I0aEf^faEmPS0M;KTO5A5b1
+Z105 V78@4Og894V7J1FFoQ7]2I3
+R4
+Z106 w1685596670
+Z107 8C:/altera/13.1/project_imporve/src/uart/rx.v
+Z108 FC:/altera/13.1/project_imporve/src/uart/rx.v
+L0 1
+R8
+r1
+31
+Z109 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/uart/rx.v|
+R10
+Z110 !s108 1686565480.941000
+Z111 !s107 C:/altera/13.1/project_imporve/src/uart/rx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vspi_master
+Z112 !s100 eN?Y0;MbnF69dVDJ5BO7D0
+Z113 IS3>WWbM:9U1V4A?CF>ZLL3
+Z114 VlUH`4Ec=Cl_0D9]zT4oaO1
+R4
+Z115 w1685605600
+Z116 8C:/altera/13.1/project_imporve/src/light_sencor/spi_master.v
+Z117 FC:/altera/13.1/project_imporve/src/light_sencor/spi_master.v
+L0 1
+R8
+r1
+31
+Z118 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/light_sencor/spi_master.v|
+R10
+Z119 !s108 1686565480.782000
+Z120 !s107 C:/altera/13.1/project_imporve/src/light_sencor/spi_master.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vspi_master_tb
+Z121 !s100 Je;7oN7CD02C`6V?K[YNM1
+Z122 IgmVaOGMm]Ik=>a0Pg^EDc0
+Z123 VGVIa@54JI5PLOVOW3THe=0
+R4
+Z124 w1685605169
+Z125 8C:/altera/13.1/project_imporve/sim/spi_master_tb.v
+Z126 FC:/altera/13.1/project_imporve/sim/spi_master_tb.v
+L0 4
+R8
+r1
+31
+Z127 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/sim/spi_master_tb.v|
+R10
+Z128 !s108 1686565480.021000
+Z129 !s107 C:/altera/13.1/project_imporve/sim/spi_master_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtimer
+Z130 !s100 ec2@Wj`JnEYGbmnbeCB_]3
+Z131 IXkj8NOoz9TmkKI^`l[oXc1
+Z132 VJenP1zL_?6Kk51I`5EXb:1
+R4
+Z133 w1686241191
+Z134 8C:/altera/13.1/project_imporve/src/timer.v
+Z135 FC:/altera/13.1/project_imporve/src/timer.v
+L0 1
+R8
+r1
+31
+Z136 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/timer.v|
+R10
+Z137 !s108 1686565480.671000
+Z138 !s107 C:/altera/13.1/project_imporve/src/timer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtop
+Z139 !s100 CjA]M_23HL2N4K?HeWL@a3
+Z140 IAS1cRFRNdk=nY@Gj_0Fe>2
+Z141 VHHCXBFjmIO=eg^5NYh6Tn1
+R4
+Z142 w1686565404
+Z143 8C:/altera/13.1/project_imporve/src/top.v
+Z144 FC:/altera/13.1/project_imporve/src/top.v
+L0 1
+R8
+r1
+31
+Z145 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/top.v|
+R10
+Z146 !s108 1686565480.718000
+Z147 !s107 C:/altera/13.1/project_imporve/src/top.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtop_tb
+!i10b 1
+!s100 UWajEn7GbIO_@1dCEX15R3
+Imc?L2]j`ieSVNJXl8`YNZ3
+Z148 VN7^ihbmI9enFg9D=Qco243
+R4
+w1686565924
+Z149 8C:/altera/13.1/project_imporve/sim/top_tb.v
+Z150 FC:/altera/13.1/project_imporve/sim/top_tb.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1686565935.143000
+!s107 C:/altera/13.1/project_imporve/sim/top_tb.v|
+Z151 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/sim/top_tb.v|
+!s101 -O0
+R10
+vtx
+Z152 !s100 Fli_H=h=93fn:EQ>kjhTC1
+Z153 IY4ZD919VJYh:J]Mh>SDB[3
+Z154 V9G]VH_[CJF<V5^:z7Vf:K2
+R4
+Z155 w1686022045
+Z156 8C:/altera/13.1/project_imporve/src/uart/tx.v
+Z157 FC:/altera/13.1/project_imporve/src/uart/tx.v
+L0 1
+R8
+r1
+31
+Z158 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/uart/tx.v|
+R10
+Z159 !s108 1686565480.988000
+Z160 !s107 C:/altera/13.1/project_imporve/src/uart/tx.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart
+Z161 !s100 PGgLDJ4Y[6FjH[:If2o932
+Z162 IRm:PoP>MZnK<5L6h0[5=60
+Z163 VzzH`7aPOnzRjJ8l2`Boe[0
+R4
+Z164 w1686021771
+Z165 8C:/altera/13.1/project_imporve/src/uart/uart.v
+Z166 FC:/altera/13.1/project_imporve/src/uart/uart.v
+L0 1
+R8
+r1
+31
+Z167 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/uart/uart.v|
+R10
+Z168 !s108 1686565481.051000
+Z169 !s107 C:/altera/13.1/project_imporve/src/uart/uart.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart_str
+Z170 !s100 G:A6DNXP5JXR@DWd`AdAa2
+Z171 I]a3QZ8j59J9gf[>8TS[jo2
+Z172 VahEEhhdkUL3k_WVdM?AKZ0
+R4
+Z173 w1686239914
+Z174 8C:/altera/13.1/project_imporve/src/uart/uart_str.v
+Z175 FC:/altera/13.1/project_imporve/src/uart/uart_str.v
+L0 1
+R8
+r1
+31
+Z176 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/src/uart/uart_str.v|
+R10
+Z177 !s108 1686565481.098000
+Z178 !s107 C:/altera/13.1/project_imporve/src/uart/uart_str.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vuart_tb
+Z179 !s100 X`3Q2YTFiZI>c;j^UMNfX2
+Z180 IB_kmRWdXU0=Q:hYHOJoAl0
+Z181 VZzYO6HjR<]<2_bm?EhR?51
+R4
+Z182 w1686022911
+Z183 8C:/altera/13.1/project_imporve/sim/uart_tb.v
+Z184 FC:/altera/13.1/project_imporve/sim/uart_tb.v
+L0 4
+R8
+r1
+31
+Z185 !s90 -reportprogress|300|-work|work|C:/altera/13.1/project_imporve/sim/uart_tb.v|
+R10
+Z186 !s108 1686565480.132000
+Z187 !s107 C:/altera/13.1/project_imporve/sim/uart_tb.v|
+!i10b 1
+!s85 0
+!s101 -O0

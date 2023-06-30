@@ -1,0 +1,116 @@
+|de0_SPI_master
+clk => clk.IN1
+n_rst => n_rst.IN1
+sclk << SPI_master:u_SPI_master1.sclk
+cs_n << SPI_master:u_SPI_master1.cs_n
+sdata => sdata.IN1
+led << SPI_master:u_SPI_master1.led
+start => start_d1.DATAIN
+start => start_in.IN1
+fnd_out1[0] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[1] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[2] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[3] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[4] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[5] << fnd_out:u_fnd_out1.fnd_out
+fnd_out1[6] << fnd_out:u_fnd_out1.fnd_out
+fnd_out2[0] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[1] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[2] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[3] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[4] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[5] << fnd_out:u_fnd_out2.fnd_out
+fnd_out2[6] << fnd_out:u_fnd_out2.fnd_out
+
+
+|de0_SPI_master|SPI_master:u_SPI_master1
+clk => adc_data[0]~reg0.CLK
+clk => adc_data[1]~reg0.CLK
+clk => adc_data[2]~reg0.CLK
+clk => adc_data[3]~reg0.CLK
+clk => adc_data[4]~reg0.CLK
+clk => adc_data[5]~reg0.CLK
+clk => adc_data[6]~reg0.CLK
+clk => adc_data[7]~reg0.CLK
+clk => sclk_d.CLK
+clk => c_cnt2[0].CLK
+clk => c_cnt2[1].CLK
+clk => c_cnt2[2].CLK
+clk => c_cnt2[3].CLK
+clk => c_cnt1[0].CLK
+clk => c_cnt1[1].CLK
+clk => c_cnt1[2].CLK
+clk => c_cnt1[3].CLK
+clk => c_cnt1[4].CLK
+clk => c_state~1.DATAIN
+n_rst => c_cnt2[0].PRESET
+n_rst => c_cnt2[1].ACLR
+n_rst => c_cnt2[2].ACLR
+n_rst => c_cnt2[3].ACLR
+n_rst => c_cnt1[0].PRESET
+n_rst => c_cnt1[1].ACLR
+n_rst => c_cnt1[2].ACLR
+n_rst => c_cnt1[3].ACLR
+n_rst => c_cnt1[4].ACLR
+n_rst => adc_data[0]~reg0.ACLR
+n_rst => adc_data[1]~reg0.ACLR
+n_rst => adc_data[2]~reg0.ACLR
+n_rst => adc_data[3]~reg0.ACLR
+n_rst => adc_data[4]~reg0.ACLR
+n_rst => adc_data[5]~reg0.ACLR
+n_rst => adc_data[6]~reg0.ACLR
+n_rst => adc_data[7]~reg0.ACLR
+n_rst => sclk_d.PRESET
+n_rst => c_state~3.DATAIN
+sclk <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+cs_n <= led.DB_MAX_OUTPUT_PORT_TYPE
+sdata => adc_data.DATAB
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+seg_h[0] <= adc_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_h[1] <= adc_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_h[2] <= adc_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_h[3] <= adc_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_l[0] <= adc_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_l[1] <= adc_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_l[2] <= adc_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg_l[3] <= adc_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[0] <= adc_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[1] <= adc_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[2] <= adc_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[3] <= adc_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[4] <= adc_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[5] <= adc_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[6] <= adc_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_data[7] <= adc_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+start => Selector1.IN3
+start => Selector0.IN1
+
+
+|de0_SPI_master|fnd_out:u_fnd_out2
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+fnd_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|de0_SPI_master|fnd_out:u_fnd_out1
+number[0] => Decoder0.IN3
+number[1] => Decoder0.IN2
+number[2] => Decoder0.IN1
+number[3] => Decoder0.IN0
+fnd_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+fnd_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

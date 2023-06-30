@@ -1,0 +1,71 @@
+module debounce(
+	clk,
+	n_rst, 
+	din, 
+	dout 
+);
+
+parameter T_ONE_SEC = 26'h2FA_F080; // = d50_000_000;
+parameter T_20MS = 20'hF_4240; // = d1_000_000;
+parameter N = 20;
+
+
+
+input 	clk;
+input	n_rst;
+input	din;
+output 	dout;
+
+localparam [1:0] S_ZERO  = 2'b00;
+localparam [1:0] S_WAIT0 = 2'b01;
+localparam [1:0] S_ONE   = 2'b10;
+localparam [1:0] S_WAIT1 = 2'b11;
+
+reg [1:0] state, next_state;
+reg [N-1:0] cnt, next_cnt;
+
+always @(posedge clk or negedge n_rst)
+	if(!n_rst) begin
+		state <= S_ZERO;
+		cnt   <= {{(N-1){1'b0}}, 1'b1};
+	end
+	else begin
+		state <= next_state;
+		cnt <= next_cnt;
+	end
+
+reg db_level;	
+
+always @(state or cnt or din or next_cnt) begin
+	case (state)
+		S_ZERO : begin
+			next_state = (din == 1'b1)? S_WAIT1 : state;
+			next_cnt = {{(N-1){1'b0}}, 1'b1};
+			db_level = 1'b0;
+		end
+		S_WAIT1   : begin
+			next_state = (next_cnt == T_20MS)? S_ONE : state;
+			next_cnt   = cnt + {{(N-1){1'b0}},1'b1};
+			db_level = 1'b1;
+		end
+		S_ONE : begin
+			next_state = (din == 1'b0)? S_WAIT0 : state;
+			next_cnt = {{(N-1){1'b0}}, 1'b1};
+			db_level = 1'b1;
+		end
+		S_WAIT0 : begin
+			next_state = (next_cnt == T_20MS)? S_ZERO : state;
+			next_cnt   = cnt + {{(N-1){1'b0}},1'b1};
+			db_level = 1'b0;
+		end
+		default  : begin
+			next_state = S_ZERO;
+			next_cnt = cnt;
+			db_level = 1'b0;
+		end
+	endcase
+end
+
+assign dout = db_level;	
+
+endmodule
